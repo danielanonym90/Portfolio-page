@@ -271,42 +271,63 @@ h1 {
         font-size: 1.5rem;
         margin-bottom: 10px;
     }
+
     .contatos-titulo {
         font-size: 1rem;
     }
+
     .sobre-titulo {
         font-size: 1.5rem;
     }
+
     .sobre-paragrafo {
         font-size: 1rem;
     }
-    .projetos-caixa {
 
-    }
+    .projetos-caixa {}
+
     .projeto-titulo {
         margin-bottom: 40px;
     }
+
     .projetos-card {
         width: auto;
         height: auto;
-    
+
     }
+
     .info-projetos {
         font-size: 1rem;
     }
+
     .paragrafo-projetos {
         font-size: 1rem;
     }
+
     .formulario-contato {
         margin-bottom: 100px;
         margin-left: 25px;
         margin-right: 25px;
     }
+
+
+
+
+
     .menu {
-        display: flex;
+
+        margin-left: 10px;
+        margin-right: 10px;
+        gap: 0;
         justify-content: space-around;
     }
+
     .menu-link {
-        margin: 5px 0 5px 0;
+        text-decoration: none;
+        color: var(--claro);
+        font-weight: 500;
+        position: relative;
+        padding: 0.5rem 0.5rem;
     }
+
 }
