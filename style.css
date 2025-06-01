@@ -306,4 +306,7 @@ h1 {
         display: flex;
         justify-content: space-around;
     }
+    .menu-link {
+        margin: 5px 0 5px 0;
+    }
 }
