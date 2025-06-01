@@ -8,9 +8,15 @@ function enviar(event) {
     const texto = `Olá, me chamo ${nome}, ${mensagem}`;
     const msgFormatada = encodeURIComponent(texto);
 
-    const url = `https://wa.me/${telefone}?text=${msgFormatada}`;
+    const url = `https://wa.me/${telefone}?text=${msgFormatada}`
 
-    window.open(url, '_blank');
+    if (nome === '' && mensagem === '') {
+        window.alert("Digite alguma coisa antes de enviar.")
+    } else {
+        window.open(url, '_blank');
+    }
+
+    
 }
 
 function viewproject (link) {
