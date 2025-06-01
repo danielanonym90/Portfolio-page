@@ -302,4 +302,8 @@ h1 {
         margin-left: 25px;
         margin-right: 25px;
     }
+    .menu-link {
+        display: flex;
+        justify-content: space-around;
+    }
 }
