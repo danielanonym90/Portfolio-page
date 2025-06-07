@@ -4,95 +4,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JavaPro - Music</title>
+    <title>Portfólio</title>
     <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/813e923fa3.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <div class="container">
-        <nav class="sidebar">
-            <div class="nav-logo">
-                
-                <i class="fa-brands fa-spotify"></i>
-                
-                <i class="fa-solid fa-house"></i>
+<div class="particulas"></div>
+    <nav class="navegacao">
+        <ul class="menu">
+            <li>
+                <a href="#inicio" class="menu-link">Início</a>
+            </li>
 
-            </div>
-            <div class="nav-library">
-                <i class="fa-solid fa-book"></i>
-                <p>Sua biblioteca</p>
-            </div>
-            <div class="nav-playlist">
+            <li>
+                <a href="#sobre" class="menu-link">Sobre</a>
+            </li>
 
-                <h5>Crie sua primeira playlist</h5>
-                <p>É fácil, vamos te ajudar</p>
-                <button>Criar playlist</button>
+            <li>
+                <a href="#projetos" class="menu-link">Projetos</a>
+            </li>
 
-            </div>
-            <div class="nav-podcast">
-                <h5>Que tal seguir um Podcast?</h5>
-                <p>Avisaremos você sobre nossos episódios</p>
-                <button>Explore Podcast</button>
-            </div>
-            <div class="nav-footer">
-                <a href="#">Legal</a>
-                <a href="#">Centro de Privacidade</a>
-                <a href="#">Política de Privacidade</a>
-                <a href="#">Cookies</a>
-                <a href="#">Sobre anúncios</a>
-                <a href="#">Acessibilidade</a>
-            </div>
-            <button class="nav-lang-button">
-                <i class="fa-solid fa-globe"></i>
-                Português do Brasil
-            </button>
-        </nav>
+            <li>
+                <a href="#contatos" class="menu-link">Contato</a>
+            </li>
+        </ul>
 
-        <main>
+    </nav>
 
-            <header class="header-style">
-                <div class="search-bar">
-                <i class="fa-solid fa-magnifying-glass"></i>
-                <input type="text" placeholder="O que você quer ouvir?">
-                </div>
-
-                <div>
-                    <ul>
-                        <li>Premium</li>
-                        <li>Suporte</li>
-                        <li id="baixar">Baixar</li>
-
-                        <li>Instalar Aplicativo</li>
-                        <li>Inscrever-se</li>
-
-                        <button>Entrar</button>
-                    </ul>
-                </div>
-
-            </header>
-
-            <section class="content">
-                <h2>Artistas populares</h2>
-                <div class="artists-grid">
-                    <!-- Inserir dados com JavaScript -->
-                </div>
-
-                <h2>Álbuns populares</h2>
-                <div class="albums-grid">
-                    <!-- Inserir dados com JavaScript -->
-                </div>
-            </section>
-        </main>
-    </div>
-    <div class="banner">
+    <main id="inicio" class="cabecalho">
         <div>
-            <h2>Testar O Premium de Graça</h2>
-            <p>Inscreva-se para curtir músicas ilimitadas só com alguns anúncios. Não pr3ecisa de cartão de crétido</p>
+            <img src="foto de perfil.jpg" alt="Imagem de perfil" class="foto-perfil">
+            <h1>Nathali</h1>
+            <p class="cabecalho-subttitle">Dev Front-end</p>
         </div>
-        <button>Inscreva-se Grátis</button>
+    </main>
 
-    </div>
+    <section id="sobre" class="sobre">
+        <h2 class="sobre-titulo">Sobre mim</h2>
+        <div class="sobre-caixa">
+            <p class="sobre-paragrafo">
+                Desenvolvedora Front-end com experiência em criação de sites profissionais e estilosos para deixar seu negócio/site muito mais chamativo e profissional.
+            </p>
+        </div>
+    </section>
+
+    <section id="projetos" class="projetos">
+        <h2 class="projeto-titulo">Meus projetos</h1>
+
+            <div class="projetos-caixa">
+                <div class="projetos-card" onclick="viewproject('https://danielanonym90.github.io/Basic-Landing-Page/')">
+                    <img src="projeto1.png" class="projetos-imagem">
+                    <div class="caixa-textos-projeto">
+                        <h3 class="info-projetos">Loja online</h3>
+                        <p class="paragrafo-projetos">Um site para uma loja virtual profissional e bonito com o foco em oferecer o a melhor experîencia possível para o usúario</p>
+                    </div>
+                </div>
+
+
+
+
+                <div class="projetos-card" onclick="viewproject('https://danielanonym90.github.io/spotify-clone-page/')">
+                    <img src="projeto2.png" class="projetos-imagem">
+                    <div class="caixa-textos-projeto">
+                        <h3 class="info-projetos">Página do Spotify</h3>
+                        <p class="paragrafo-projetos">Clone da página do Spotify com design moderno, responsivo e navegação fluida. O projeto destaca minha atenção aos detalhes, usabilidade e performance no front-end.</p>
+                    </div>
+                </div>
+
+
+
+                
+
+            </div>
+
+    </section>
+
+
+    <section id="contatos" class="contatos">
+
+        <h2 class="contatos-titulo">Entre em contato</h2>
+
+        <form onsubmit="enviar(event)" class="formulario-contato" id="formulario">
+            <div class="grupo-form">
+                <input type="text" class="campo-form" placeholder="Nome" id="nome">
+            </div>
+            <div class="grupo-form">
+                <textarea class="campo-form" placeholder="Digite sua mensagem" id="mensagem" rows="4"></textarea>
+            </div>
+
+            <button type="submit" class="botao-form">Enviat Whatsapp</button>
+        </form>
+
+    </section>
 
 
     <script src="script.js"></script>
